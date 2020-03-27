@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import {HttpClientModule} from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProductService } from './product.service';
 import { AppComponent } from './app.component';
-import { SlidesComponent } from './slides/slides.component';
+import { SlidesComponent } from './slides/slide.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { ProductListComponent } from './product-list/product-list.component';
