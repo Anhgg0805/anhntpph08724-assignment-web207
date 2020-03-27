@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './product.service';
 import { AppComponent } from './app.component';
-import { SlidesComponent } from './slides/slide.component';
+import { SlidesComponent } from './slides/slides.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SlideComponent } from './slide/slide.component';
 @NgModule({
   declarations: [
     AppComponent,
