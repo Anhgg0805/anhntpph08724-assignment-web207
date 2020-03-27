@@ -1,1 +1,28 @@
-<p>product-manager works!</p>
+<a class="nav-link" routerLink="/addProduct" routerLinkActive="active">Add Product</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <!-- <th scope="col">Desc</th>
+      <th scope="col">Status</th> -->
+      <th scope="col">Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th scope="row">{{product.id}}</th>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <!-- <td>{{product.desc}}</td>
+      <td>{{product.status ? 'In stock' : 'Out stock'}}</td> -->
+      <td>
+      <button class="btn btn-primary" routerLink="/product/edit/{{product.id}}">Edit</button>
+      <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
+    </tr>
+    
+  </tbody>
+</table>
