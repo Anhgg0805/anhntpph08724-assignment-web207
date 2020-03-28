@@ -13,19 +13,14 @@ export class ProductService {
 
   getProducts():Observable <Product[]> {
     return this.http.get<Product[]>(this.api);
-    // return this.products;
   }
   getProduct(id):Observable <Product>{
-    // return this.products.find(product => product.id == id);
     return this.http.get<Product>(`${this.api}/${id}`);
   }
   removeProduct(id):Observable <Product>{
-    // return this.products.filter(product => product.id !== id);
     return this.http.delete<Product>(`${this.api}/${id}`);
   }
   addProduct(product):Observable <Product>{
-    // let newObj = { id: 11, ...product };
-    // this.products.push(newObj);
     return this.http.post<Product>(`${this.api}`,product);
   }
   editProduct(product):Observable<Product>{
