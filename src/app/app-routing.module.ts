@@ -19,6 +19,7 @@ const routes: Routes = [
     children: [
         { path: '', component:ProductListComponent},
         { path: "about", component: AboutComponent },
+        
   { path: "service", component: ServiceComponent }
       ]
   },
