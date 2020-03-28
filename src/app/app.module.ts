@@ -16,6 +16,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HomeComponent } from './home/home.component';
+import { IndexAdminComponent } from './index-admin/index-admin.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HomeComponent } from './home/home.component';
     NotFoundComponent,
     ProductAddComponent,
     HomeComponent,
+    IndexAdminComponent,
     
   ],
   imports: [
