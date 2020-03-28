@@ -1,1 +1,19 @@
-<p>product-edit works!</p>
+<h2>Edit Product</h2>
+                <form *ngIf="product">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" [(ngModel)]="product.name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" name="price" [(ngModel)]="product.price" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Desc</label>
+                        <input type="text" name="desc" [(ngModel)]="product.desc" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" (click)="edit()">Edit</button>
+                    </div>
+                </form>
+ 
