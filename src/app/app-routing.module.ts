@@ -24,16 +24,14 @@ const routes: Routes = [
   },
   {path :'admin',component:IndexAdminComponent,
      children: [
-        { path: '', component:DashboardComponent},
-        { path: "about", component: AboutComponent },
-        { path: "service", component: ServiceComponent }
-      ]
-  },
-  { path: "product-manager", component: ProductManagerComponent },
-  {path : 'product-list',component:ProductListComponent},
+        { path: '', component:ProductManagerComponent},
+        { path: "product-manager", component: ProductManagerComponent },
   { path: 'product/:id', component: ProductDetailComponent},
   { path: 'product/edit/:id', component: ProductEditComponent},
   {path :'addProduct',component:ProductAddComponent},
+      ]
+  },
+  
   { path: "404", component: NotFoundComponent },
   // { path: "**", redirectTo: "/404" }
 ];
