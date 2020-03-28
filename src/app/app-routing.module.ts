@@ -8,13 +8,14 @@ import {ProductManagerComponent} from './product-manager/product-manager.compone
 import {ProductEditComponent} from './product-edit/product-edit.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: ProductListComponent ,
+  { path: "home", component: HomeComponent ,
     children: [
-        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: '', component:ProductListComponent},
         { path: "about", component: AboutComponent },
   { path: "service", component: ServiceComponent }
       ]
