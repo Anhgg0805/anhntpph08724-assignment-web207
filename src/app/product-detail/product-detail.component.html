@@ -1,1 +1,20 @@
-<p>product-detail works!</p>
+<div *ngIf="product">
+ <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+         <div class="container py-lg-5 py-md-5 py-sm-4 py-4">
+            <div class="row agile-abt-info ">
+               <div class="col-lg-6 w3layouts-left-side-img">
+                  <img [src]="product.img" class="img-thumbnail" alt="">
+               </div>
+               <div class="col-lg-5 offset-lg-1 info-sub-w3 pb-lg-3 pb-md-2 pb-2">
+                  <div class="jst-wthree-text">
+                     <h2>{{product.name}}
+                     </h2>
+                  </div>
+                  <p>{{product.desc}}
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+      </section>
+</div>
