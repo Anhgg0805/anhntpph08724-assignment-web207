@@ -9,6 +9,7 @@ import {ProductEditComponent} from './product-edit/product-edit.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HomeComponent } from './home/home.component';
+import { IndexAdminComponent } from './index-admin/index-admin.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,7 @@ const routes: Routes = [
   { path: "service", component: ServiceComponent }
       ]
   },
-  
+  {path :'admin',component:IndexAdminComponent},
   { path: "product-manager", component: ProductManagerComponent },
   {path : 'product-list',component:ProductListComponent},
   { path: 'product/:id', component: ProductDetailComponent},
