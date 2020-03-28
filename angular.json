@@ -26,7 +26,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/easing.js",
+              "src/assets/js/easy-responsive-tabs.js",
+              "src/assets/js/move-top.js",
+              "src/assets/js/responsiveslides.min.js"
+            ]
           },
           "configurations": {
             "production": {
