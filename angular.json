@@ -30,7 +30,8 @@
               "src/assets/js/easing.js",
               "src/assets/js/easy-responsive-tabs.js",
               "src/assets/js/move-top.js",
-              "src/assets/js/responsiveslides.min.js"
+              "src/assets/js/responsiveslides.min.js",
+              "src/assets/js/jquery-2.3.3.min.js"
             ]
           },
           "configurations": {
