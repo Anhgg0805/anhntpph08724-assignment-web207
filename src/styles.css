@@ -532,11 +532,12 @@ padding: 10px 20px;
 margin: 0;
 max-width: none;
 }
-.slider-info {
-padding: 22em 0 0;
-}
-.slider-info h5 {
-font-size:46px;
+
+.carousel-item h5 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+font-size:36px;
 color: #caaa71;
 font-weight: 600;
 letter-spacing: 3px;
@@ -544,9 +545,12 @@ margin-bottom: 11px;
 font-family: 'Libre Baskerville', serif;
 text-shadow: 1px 1px 7px #151212;
 }
-.slider-info h4 {
+.carousel-item h4 {
+   position: absolute;
+  top: 50%;
+  right: 20%;
 color: #fff;
-font-size:37px;
+font-size:27px;
 letter-spacing: 5px;
 font-weight:600;
 text-shadow: 2px 2px 8px #000;
