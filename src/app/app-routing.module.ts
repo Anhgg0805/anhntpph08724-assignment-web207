@@ -10,6 +10,7 @@ import {NotFoundComponent} from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HomeComponent } from './home/home.component';
 import { IndexAdminComponent } from './index-admin/index-admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,13 @@ const routes: Routes = [
   { path: "service", component: ServiceComponent }
       ]
   },
-  {path :'admin',component:IndexAdminComponent},
+  {path :'admin',component:IndexAdminComponent,
+     children: [
+        { path: '', component:DashboardComponent},
+        { path: "about", component: AboutComponent },
+        { path: "service", component: ServiceComponent }
+      ]
+  },
   { path: "product-manager", component: ProductManagerComponent },
   {path : 'product-list',component:ProductListComponent},
   { path: 'product/:id', component: ProductDetailComponent},
