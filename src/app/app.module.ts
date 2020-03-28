@@ -17,6 +17,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HomeComponent } from './home/home.component';
 import { IndexAdminComponent } from './index-admin/index-admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { IndexAdminComponent } from './index-admin/index-admin.component';
     ProductAddComponent,
     HomeComponent,
     IndexAdminComponent,
+    DashboardComponent,
     
   ],
   imports: [
