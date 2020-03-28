@@ -12,9 +12,14 @@ import { ProductAddComponent } from './product-add/product-add.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: ProductListComponent },
-  { path: "about", component: AboutComponent },
-  { path: "service", component: ServiceComponent },
+  { path: "home", component: ProductListComponent ,
+    children: [
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: "about", component: AboutComponent },
+  { path: "service", component: ServiceComponent }
+      ]
+  },
+  
   { path: "product-manager", component: ProductManagerComponent },
   {path : 'product-list',component:ProductListComponent},
   { path: 'product/:id', component: ProductDetailComponent},

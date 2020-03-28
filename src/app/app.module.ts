@@ -15,6 +15,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     ProductEditComponent,
     NotFoundComponent,
     ProductAddComponent,
+    HomeComponent,
     
   ],
   imports: [
