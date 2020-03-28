@@ -31,7 +31,7 @@ const routes: Routes = [
   {path :'addProduct',component:ProductAddComponent},
       ]
   },
-  { path: 'product/:id', component: ProductDetailComponent},
+  
   { path: "404", component: NotFoundComponent },
   // { path: "**", redirectTo: "/404" }
 ];
