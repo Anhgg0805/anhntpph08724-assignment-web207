@@ -1,0 +1,17 @@
+ .btn{
+   font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #b17812;
+    outline: none;
+    padding: 12.5px 13px;
+    border: 1px solid #b17812;
+    border-radius: 0px;
+}
+.btn:hover{
+  background:#000;
+color: #fff;
+}
